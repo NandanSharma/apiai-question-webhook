@@ -20,9 +20,9 @@ if($method == "POST"){
 	
 	
 	$response = new \stdClass();
-	$response->speech = "";
-	$response->sidplayText = "";
-	$response->sidplayText = "webhook";
+	$response->speech = $speech;
+	$response->displayText = $speech;
+	$response->displayText = "webhook";
 	echo json_encode($response);
 	
 }else{
